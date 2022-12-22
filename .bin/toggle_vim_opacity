@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+## chmod +x ~/bin/toggle_alacritty_opacity
+
+## If alacritty.yml does not exist, raise an alert
+[[ ! -f ~/.config/alacritty/alacritty.yml ]] && \
+    notify-send "alacritty.yml does not exist" && exit 0
+
+## Fetch background_opacity from alacritty.yml
+opacity=$(awk '$1 == "transparent_background_colors:" {print $2; exit}' \
+    ~/.config/alacritty/alacritty.yml)
+
+## Assign toggle opacity value
+case $opacity in
+  true)
+    toggle_opacity=false
+    ;;
+  *)
+    toggle_opacity=true
+    ;;
+esac
+
+## Replace opacity value in alacritty.yml
+sed -i -- "s/transparent_background_colors: $opacity/transparent_background_colors: $toggle_opacity/" \
+    ~/.config/alacritty/alacritty.yml

@@ -1,0 +1,28 @@
+#!/usr/bin/env python3.10
+
+from sys import argv
+
+index = None
+with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'r') as file:
+    data = file.readlines()
+    for line in range(len(data)):
+        if 'opacity:' in data[line]:
+            index = line
+            print(data[line].strip())
+
+try:
+    float(argv[1])
+
+except ValueError as ex:
+    print(f'{ex = }')
+    quit()
+except IndexError:
+    print('input the argument!')
+    quit()
+try:
+
+    data[index] = f'  opacity: {argv[1]}\n'
+    with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'w') as file:
+        file.writelines(data)
+except BaseException as ex:
+    print(f'{ex = }')
