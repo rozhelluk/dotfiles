@@ -1,4 +1,4 @@
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' 
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
 #
 # export PATH=$PATH:/home/rozhelluk/.python3.11/bin$PATH
 # alias py=python3.11
