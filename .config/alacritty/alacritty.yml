@@ -6,13 +6,13 @@ window:
     y: 0
   dynamic_padding: false
   decorations: Full
-  opacity: 1
+  opacity: 0.8
   # title: Alacritty
   # class:
   #   instance: Alacritty
   #   general: Alacritty
 colors:
-  transparent_background_colors: false
+  transparent_background_colors: true
 scrolling:
   history: 10000
 font:
@@ -377,7 +377,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *GruvboxDark
+# colors: *GruvboxDark
 
 
 #######################################
