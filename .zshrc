@@ -1,12 +1,14 @@
+ZSH_DISABLE_COMPFIX=true
 #==================================export=====================================#
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.bin:$PATH
+export MANPAGER='nvim +Man!'
 # export PATH=$HOME/.bin
 
 ZSH_THEME="my2"
-source $ZSH/oh-my-zsh.sh
 plugins=(git extract pip python tmux sudo aliases )
+source $ZSH/oh-my-zsh.sh
 # eval $(thefuck --alias)
 eval PYTHONDONTWRITEBYTECODE=1
 
@@ -50,6 +52,7 @@ alias bpy='bpython'
 alias e="mkv env && vrun env"
 alias ae='source .env/bin/activate'
 alias de="deactivate"
+# alias .="source"
 
 alias www='/opt/firefox/firefox'
 # # update for deb
@@ -62,7 +65,9 @@ alias .s="source ~/.zshrc"
 alias t="tmux"
 # for django kill localhost
 alias k8000='sudo fuser -k 8000/tcp'
-alias .='printf "\e[5 q"'
+
+# alias .='printf "\e[5 q"'
+#
 # alias tlauncher='__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia java -jar ~/.TLauncher-2.86.jar'
 # alias sqlstudio="~/Загальнодоступні/SQLiteStudio/sqlitestudio"
 
