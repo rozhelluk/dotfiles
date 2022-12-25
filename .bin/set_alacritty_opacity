@@ -2,7 +2,7 @@
 
 from sys import argv
 
-index = None
+index = 0
 with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'r') as file:
     data = file.readlines()
     for line in range(len(data)):
@@ -10,19 +10,22 @@ with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'r') as file:
             index = line
             print(data[line].strip())
 
-try:
-    float(argv[1])
+if len(argv) == 2:
+    try:
+        float(argv[1])
+        data[index] = f'  opacity: {argv[1]}\n'
+        with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'w') as file:
+            file.writelines(data)
+        exit()
+    except BaseException as ex:
+        print(ex)
+else:
+    if float(data[index].strip().split()[1]) != 1:
+        data[index] = f'  opacity: 1\n'
+        with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'w') as file:
+            file.writelines(data)
+        exit()
 
-except ValueError as ex:
-    print(f'{ex = }')
-    quit()
-except IndexError:
-    print('input the argument!')
-    quit()
-try:
-
-    data[index] = f'  opacity: {argv[1]}\n'
+    data[index] = f'  opacity: 0\n'
     with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'w') as file:
         file.writelines(data)
-except BaseException as ex:
-    print(f'{ex = }')
