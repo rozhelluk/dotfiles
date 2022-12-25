@@ -1,0 +1,1 @@
+../.oh-my-zsh/custom/themes/my2.zsh-theme
