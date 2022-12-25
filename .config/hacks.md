@@ -1,3 +1,3 @@
-tldr - like a man, but faster
-exa - ls
-bat - cat
+#tldr - like a man, but faster
+#exa - ls
+#bat - cat
