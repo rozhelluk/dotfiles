@@ -1,0 +1,11 @@
+tldr - like a man, but faster
+exa - ls
+bat - cat
+snapper 
+
+#dconf backup
+dconf dump / > dconf.backup
+dconf reset -f /
+
+dconf dump /org/gnome/ > my_gnome_settings.backup
+dconf reset -f /org/gnome/

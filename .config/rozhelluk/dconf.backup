@@ -1,0 +1,382 @@
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/gnome/shell/extensions/pop-shell/pop-workspace-up'
+saved-view='/org/gnome/shell/extensions/pop-shell/'
+window-height=453
+window-is-maximized=true
+window-width=872
+
+[org/freedesktop/folks]
+primary-store='eds:system-address-book'
+
+[org/gnome/Console]
+font-scale=1.7000000000000006
+last-window-size=(1199, 759)
+
+[org/gnome/Contacts]
+did-initial-setup=true
+window-fullscreen=false
+window-height=600
+window-maximized=false
+window-width=800
+
+[org/gnome/baobab/ui]
+active-chart='rings'
+is-maximized=false
+window-size=(1243, 600)
+
+[org/gnome/cheese]
+burst-delay=1000
+camera='Вбудована передня камера'
+photo-x-resolution=1280
+photo-y-resolution=720
+video-x-resolution=1280
+video-y-resolution=720
+
+[org/gnome/clocks/state/window]
+maximized=false
+panel-id='timer'
+size=(870, 690)
+
+[org/gnome/control-center]
+last-panel='keyboard'
+window-state=(936, 1016, true)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', '4a7939cd-a4dc-4cbf-a8b0-03c539a8585c', 'c42b3bc6-0e60-4aba-b90f-02f54493b031']
+
+[org/gnome/desktop/app-folders/folders/4a7939cd-a4dc-4cbf-a8b0-03c539a8585c]
+apps=['bssh.desktop', 'avahi-discover.desktop', 'bvnc.desktop']
+name='Неназвана тека'
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+excluded-apps=['org.gnome.tweaks.desktop']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/c42b3bc6-0e60-4aba-b90f-02f54493b031]
+apps=['org.gnome.Weather.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Cheese.desktop', 'qvidcap.desktop', 'org.gnome.Totem.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Calculator.desktop', 'simple-scan.desktop', 'gnome-system-monitor.desktop', 'yelp.desktop', 'qv4l2.desktop', 'vim.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Epiphany.desktop', 'cmake-gui.desktop', 'org.gnome.Music.desktop']
+name='Неназвана тека'
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='stretched'
+picture-uri='file:///home/rozhelluk/.conky/Green Apple Desktop/wallpaper.jpg'
+picture-uri-dark='/home/rozhelluk/.config/background'
+primary-color='#3071AE'
+secondary-color='#000000'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/input-sources]
+per-window=false
+sources=[('xkb', 'us'), ('xkb', 'ua')]
+xkb-options=['terminate:ctrl_alt_bksp', 'lv3:ralt_switch', 'caps:ctrl_modifier']
+
+[org/gnome/desktop/interface]
+clock-show-seconds=true
+clock-show-weekday=true
+color-scheme='prefer-dark'
+document-font-name='Ubuntu Nerd Font Light 13'
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-name='Ubuntu NF Light 13'
+icon-theme='Adwaita'
+locate-pointer=false
+monospace-font-name='Bitstream Vera Sans 12'
+show-battery-percentage=true
+
+[org/gnome/desktop/notifications]
+application-children=['gnome-power-panel', 'org-gnome-console', 'spotify-launcher', 'firefox', 'discord', 'org-gnome-baobab', 'gnome-network-panel', 'org-gnome-software', 'ca-desrt-dconf-editor']
+show-banners=false
+
+[org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
+application-id='ca.desrt.dconf-editor.desktop'
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/spotify-launcher]
+application-id='spotify-launcher.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='default'
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-l.webp'
+primary-color='#3071AE'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 720
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+close=['<Alt>F4', '<Super>q']
+maximize=@as []
+minimize=@as []
+move-to-monitor-down=@as []
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-monitor-up=@as []
+move-to-workspace-left=['<Shift><Super>h']
+move-to-workspace-right=['<Shift><Super>l']
+show-desktop=['<Super>d']
+switch-to-workspace-left=['<Alt><Super>h']
+switch-to-workspace-right=['<Alt><Super>l']
+toggle-fullscreen=['F11']
+toggle-maximized=['<Alt>F10', '<Super>m']
+
+[org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='minimize'
+button-layout='close:appmenu'
+num-workspaces=3
+resize-with-right-button=true
+titlebar-font='Ubuntu NF Bold 13'
+
+[org/gnome/epiphany]
+ask-for-default=false
+default-search-engine='DuckDuckGo'
+search-engine-providers=[{'url': <'https://www.bing.com/search?q=%s'>, 'bang': <'!b'>, 'name': <'Bing'>}, {'url': <'https://duckduckgo.com/?q=%s&t=epiphany'>, 'bang': <'!ddg'>, 'name': <'DuckDuckGo'>}, {'url': <'https://www.google.com/search?q=%s'>, 'bang': <'!g'>, 'name': <'Google'>}]
+
+[org/gnome/epiphany/state]
+is-maximized=true
+window-size=(0, 0)
+
+[org/gnome/epiphany/web]
+default-zoom-level=1.0
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/evolution]
+default-address-book='system-address-book'
+
+[org/gnome/gnome-system-monitor]
+maximized=false
+network-total-in-bits=false
+show-dependencies=false
+show-whose-processes='user'
+window-state=(700, 500, 26, 23)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[org/gnome/mutter]
+center-new-windows=true
+dynamic-workspaces=false
+edge-tiling=false
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[org/gnome/mutter/wayland/keybindings]
+restore-shortcuts=@as []
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(1297, 737)
+
+[org/gnome/photos]
+window-maximized=true
+window-position=[-16, 19]
+window-size=[1024, 664]
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
+night-light-temperature=uint32 3173
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+magnifier=@as []
+screenreader=@as []
+www=['<Super>b']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>t'
+command='/home/rozhelluk/.cargo/bin/alacritty'
+name='t'
+
+[org/gnome/shell]
+always-show-log-out=true
+app-picker-layout=[{'htop.desktop': <{'position': <0>}>, 'nvim.desktop': <{'position': <1>}>, 'firefox.desktop': <{'position': <2>}>, 'org.gnome.tweaks.desktop': <{'position': <3>}>, 'org.gnome.Extensions.desktop': <{'position': <4>}>, 'spotify-launcher.desktop': <{'position': <5>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <6>}>}, {'c42b3bc6-0e60-4aba-b90f-02f54493b031': <{'position': <0>}>, '4a7939cd-a4dc-4cbf-a8b0-03c539a8585c': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'org.gnome.Software.desktop': <{'position': <3>}>, 'grub-customizer.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'discord.desktop': <{'position': <6>}>, 'com.github.arshubham.gitignore.desktop': <{'position': <7>}>, 'nnn.desktop': <{'position': <8>}>}]
+command-history=['r', 'alacritty']
+disable-user-extensions=false
+disabled-extensions=['windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'toggle-alacritty@itstime.tech', 'no-overview@fthx', 'panelSettings@eddiefullmetal.gr', 'quick-settings-tweaks@qwreey', 'clipboard-history@alexsaveau.dev', 'clear-top-bar@superterran.net', 'pop-shell@system76.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=@as []
+last-selected-power-profile='performance'
+welcome-dialog-last-shown-version='43.2'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/extensions/clipboard-history]
+cache-only-favorites=true
+display-mode=3
+
+[org/gnome/shell/extensions/pop-shell]
+active-hint=true
+active-hint-border-radius=uint32 8
+focus-down=['<Super>KP_Down', '<Super>j']
+fullscreen-launcher=false
+gap-inner=uint32 4
+gap-outer=uint32 4
+hint-color-rgba='rgba(0,25,255,0.334459)'
+pop-monitor-down=@as []
+pop-monitor-left=@as []
+pop-monitor-right=@as []
+pop-monitor-up=@as []
+pop-workspace-down=@as []
+pop-workspace-up=@as []
+show-skip-taskbar=false
+show-title=false
+smart-gaps=false
+snap-to-grid=true
+tile-by-default=true
+tile-move-down-global=['<Super><Primary>j']
+tile-move-left-global=['<Super><Primary>h']
+tile-move-right-global=['<Super><Primary>l']
+tile-move-up-global=['<Super><Primary>k']
+
+[org/gnome/shell/extensions/quick-settings-tweaks]
+datemenu-remove-media-control=false
+datemenu-remove-notifications=false
+input-always-show=true
+input-show-selected=false
+list-buttons='[{"name":"Clutter_Actor","label":null,"visible":true},{"name":"SystemItem","label":null,"visible":true},{"name":"OutputStreamSlider","label":null,"visible":false},{"name":"InputStreamSlider","label":null,"visible":false},{"name":"St_BoxLayout","label":null,"visible":true},{"name":"BrightnessItem","label":null,"visible":true},{"name":"NMWiredToggle","label":null,"visible":false},{"name":"NMWirelessToggle","label":"MERCUSYS_DCD4","visible":true},{"name":"NMModemToggle","label":null,"visible":false},{"name":"NMBluetoothToggle","label":null,"visible":false},{"name":"NMVpnToggle","label":null,"visible":false},{"name":"BluetoothToggle","label":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","label":"Швидкодія","visible":true},{"name":"NightLightToggle","label":"Нічне світло","visible":true},{"name":"DarkModeToggle","label":"Темний режим","visible":true},{"name":"RfkillToggle","label":"Режим польоту","visible":true},{"name":"RotationToggle","label":"Автоматичне обертання","visible":false},{"name":"DndQuickToogle","label":"Не турбувати","visible":true},{"name":"MediaSection","label":null,"visible":false}]'
+notifications-enabled=false
+output-show-selected=false
+user-removed-buttons=@as []
+volume-mixer-position='top'
+volume-mixer-show-description=true
+
+[org/gnome/shell/extensions/toggle-alacritty]
+toggle-key=['<Alt>T']
+
+[org/gnome/shell/keybindings]
+shift-overview-down=@as []
+shift-overview-up=@as []
+toggle-message-tray=@as []
+toggle-overview=@as []
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/simple-scan]
+document-type='photo'
+
+[org/gnome/software]
+check-timestamp=int64 1671941170
+first-run=false
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=157
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-size=(998, 327)
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.0, 0.099999999999999645, 1.0, 0.33445945945945948), (0.42352941176470588, 0.6470588235294118, 0.98431372549019602, 1.0), (0.42352941176470582, 0.64784313725490217, 0.98431372549019602, 1.0), (0.98431372549019602, 0.72156862745098038, 0.42352941176470588, 1.0), (0.0, 0.75686274509803919, 1.0, 0.40540540540540543), (0.0, 0.75686274509803919, 1.0, 0.60135099999999997), (0.0, 0.75675675675675658, 1.0, 0.60135135135135132), (0.1803921568627451, 0.1803921568627451, 0.1803921568627451, 0.44256800000000002)]
+selected-color=(true, 0.0, 0.099999999999999645, 1.0, 0.33445945945945948)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=157
+sort-column='type'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(345, 82)
+window-size=(1231, 902)
+
+[org/virt-manager/virt-manager]
+manager-window-height=1011
+manager-window-width=1920
+system-tray=false
+xmleditor-enabled=false
+
+[org/virt-manager/virt-manager/confirm]
+removedev=true
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['lxc:///', 'qemu:///system']
+uris=['qemu:///system', 'lxc:///']
+
+[org/virt-manager/virt-manager/conns/lxc:]
+window-size=(800, 600)
+
+[org/virt-manager/virt-manager/new-vm]
+graphics-type='system'
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=false
+network-traffic=false
+
+[org/virt-manager/virt-manager/vms/1675becc5fe84b4fbbff23665d48b769]
+autoconnect=1
+scaling=1
+vm-window-size=(1085, 810)
+
+[system/locale]
+region='uk_UA.UTF-8'
