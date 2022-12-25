@@ -89,4 +89,5 @@ alias ls='exa -1 --icons' # one column, just names
 alias lt='exa --tree --level=2' # tree
 
 # alias lg='lazygit'
+alias hacks='bat ~/.config/hacks.md'
 
