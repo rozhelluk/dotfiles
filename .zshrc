@@ -7,9 +7,9 @@ export MANPAGER='nvim +Man!'
 # export PATH=$HOME/.bin
 
 ZSH_THEME="my2"
-plugins=(git extract pip python tmux sudo aliases )
+plugins=(git extract pip python tmux sudo aliases zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
-# eval $(thefuck --alias)
+eval $(thefuck --alias)
 eval PYTHONDONTWRITEBYTECODE=1
 
 #==================================unalias====================================#
@@ -31,7 +31,6 @@ alias cls="clear"
 alias vimconfig="v ~/.config/nvim/lua/user/init.lua"
 alias v='/usr/bin/nvim'
 
-alias fuck=/home/rozhelluk/.local/bin/thefuck
 alias disk=gdu
 alias ht='htop'
 alias nt='nvtop'
@@ -44,7 +43,7 @@ alias xe='xdg-open .'
 alias cdd='cd ~/Downloads/'
 
 # alacritty
-alias set="set_alacritty_opacity" 
+alias set="set_alacritty_opacity2" 
 
 # for python | wenv
 # export PATH=$PATH:/home/rozhelluk/.python3.11/bin$PATH
@@ -87,7 +86,13 @@ alias lx='exa -lbhHiUmuSa@ --time-style=long-iso --git --color-scale' # all + ex
 # speciality views
 alias ls='exa -1 --icons' # one column, just names
 alias lt='exa --tree --level=2' # tree
+alias lh='exa --icons -d .*'
+alias ld='exa --icons -D'
 
 # alias lg='lazygit'
 alias hacks='v ~/.config/hacks.txt'
 
+cx(){ cd "$@" && ll;}
+
+alias f='fuck'
+alias j='cd'

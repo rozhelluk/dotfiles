@@ -1,5 +1,6 @@
 local config = {
 
+
   colorscheme = "gruvbox-baby",
 
   options = {
@@ -102,8 +103,8 @@ local config = {
       vim.keymap.set("n", "<leader>n", ":ASToggle<CR>"),
 
       -- vim.keymap.set("n", "<F2>", ":!toggle_alacritty_opacity"),
-      ["<F2>"] = { "<cmd>!toggle_vim_opacity<cr><cr>", desc = "toggle_vim_opacity" },
-      ["<F3>"] = { "<cmd>!toggle_alacritty_opacity<cr><cr>", desc = "toggle_alacritty_opacity" },
+      ["<F2>"] = { "<cmd>!toggle_vim_opacity<cr><cr>", desc = "toggle vim opacity" },
+      ["<F3>"] = { "<cmd>!set_alacritty_opacity2<cr><cr>", desc = "toggle alacritty opacity" },
 
       ["<leader>ar"] = { "<cmd>AstroReload<cr>", desc = "AstroReload" },
       ["<leader>aa"] = { "<cmd>tabnew /home/rozhelluk/.config/nvim/lua/user/init.lua<cr>:q<cr>", desc = "AstroConfig" },

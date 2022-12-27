@@ -1,3 +1,0 @@
-[submodule ".config/nvim/AstroNvim"]
-	path = .config/nvim/AstroNvim
-	url = https://github.com/AstroNvim/AstroNvim
