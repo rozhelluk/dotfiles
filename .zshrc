@@ -4,6 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.bin:$PATH
 export MANPAGER='nvim +Man!'
+export TERM="alacritty"
 # export PATH=$HOME/.bin
 
 ZSH_THEME="my2"
@@ -56,6 +57,7 @@ alias de="deactivate"
 alias www='/opt/firefox/firefox'
 # # update for deb
 # alias update='_ apt update -y && echo " " && _ apt upgrade -y && apt list --upgradable  && echo " " && _ apt autoremove -y'
+
 # shell config
 alias s="v ~/.zshrc"
 alias .s="source ~/.zshrc"
@@ -78,14 +80,14 @@ alias aur=paru
 # exa (ls)
 alias lS='exa' # ls
 alias l='exa -lbF --git --icons' # list, size, type, git
-alias ll='exa -lbFa --git' # long list
-alias L='exa -lbGF --git' # long list
-alias llm='exa -lbGF --git --sort=modified' # long list, modified date sort
-alias la='exa -lbhHiUmuSa --time-style=long-iso --git --color-scale' # all list
-alias lx='exa -lbhHiUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
+alias ll='exa -lbFa --git --icons' # long list
+alias L='exa -lbGF --git --icons' # long list
+alias llm='exa -lbGF --git --sort=modified --icons' # long list, modified date sort
+alias la='exa -lbhHiUmuSa --time-style=long-iso --git --color-scale --icons' # all list
+alias lx='exa -lbhHiUmuSa@ --time-style=long-iso --git --color-scale --icons' # all + extended list
 # speciality views
 alias ls='exa -1 --icons' # one column, just names
-alias lt='exa --tree --level=2' # tree
+alias lt='exa --tree --level=2 --icons' # tree
 alias lh='exa --icons -d .*'
 alias ld='exa --icons -D'
 

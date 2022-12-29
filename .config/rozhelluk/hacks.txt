@@ -2,6 +2,7 @@ tldr - like a man, but faster
 exa - ls
 bat - cat
 snapper 
+dust - disk usage
 
 #dconf backup
 dconf dump / > dconf.backup

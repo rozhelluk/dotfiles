@@ -18,6 +18,7 @@ local config = {
       encoding = "UTF-8",
       fileencoding = "UTF-8",
       tabstop = 4,
+      showtabline = 0,
       laststatus = 0,
 
       -- українська мова (ctrl-^)
@@ -111,7 +112,7 @@ local config = {
       ["<leader>au"] = { "<cmd>AstroUpdate<cr>", desc = "AstroUpdate" },
       ["<leader>av"] = { "<cmd>AstroVersion<cr>", desc = "AstroVersion" },
 
-      -- vim.keymap.set("n","<F4>", ":w<CR>:exec '!python3 -B' shellescape(@%, 1)<CR>"),
+       vim.keymap.set("n","<F4>", ":w<CR>:exec '!python3 -B' shellescape(@%, 1)<CR>"),
       -- vim.keymap.set("n","<F6>", ":w<CR>:vsplit term://python3 -B %<cr>i"),
       -- vim.keymap.set("n","<F8>", ":w<CR>:exec '!g++ -Wall % && ./a.out' shellescape(@%, 1)<CR>"),
       -- vim.keymap.set("n","<F9>", ":w<CR>:vsplit term://g++ -Wall % && ./a.out<cr>i"),
