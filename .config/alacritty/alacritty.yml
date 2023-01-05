@@ -6,7 +6,7 @@ window:
     y: 0
   dynamic_padding: false
   decorations: Full
-  opacity: .4
+  opacity: .7
   # title: Alacritty
   # class:
   #   instance: Alacritty
@@ -16,12 +16,40 @@ colors:
 scrolling:
   history: 10000
 font:
+
+  normal:
+    family: RobotoMono
+    style: Regular
+  bold:
+    family: RobotoMono
+    style: Bold
+  italic:
+    family: RobotoMono
+    style: Italic
+  bold_italic:
+    family: RobotoMono
+    style: Bold Italic
+
+  # normal:
+  #   family: OverpassMono
+  #   style: Regular
+  # bold:
+  #   family: OverpassMono
+  #   style: Bold
+  # italic:
+  #   family: OverpassMono
+  #   style: Italic
+  # bold_italic:
+  #   family: OverpassMono
+  #   style: Bold Italic
+
   size: 20.0
   offset:
     x: 0
     y: 0
 cursor:
   style: Beam
+
 
 # Offer IPC using `alacritty msg` (unix only)
 ipc_socket: true

@@ -1,14 +1,26 @@
 ZSH_DISABLE_COMPFIX=true
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 #==================================export=====================================#
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.bin:$PATH
 export MANPAGER='nvim +Man!'
+export EDITOR='nvim'
 export TERM="alacritty"
+# export PATH=$PATH:/usr/local/go/bin
 # export PATH=$HOME/.bin
 
 ZSH_THEME="my2"
-plugins=(git extract pip python tmux sudo aliases zsh-autosuggestions)
+plugins=(git
+  extract
+  pip
+  python
+  tmux
+  sudo
+  aliases
+  zsh-autosuggestions
+  # zsh-syntax-highlighting
+  zsh-completions
+)
 source $ZSH/oh-my-zsh.sh
 eval $(thefuck --alias)
 eval PYTHONDONTWRITEBYTECODE=1
@@ -98,3 +110,4 @@ cx(){ cd "$@" && ll;}
 
 alias f='fuck'
 alias j='cd'
+source /home/rozhelluk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
