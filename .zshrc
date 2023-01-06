@@ -110,4 +110,4 @@ cx(){ cd "$@" && ll;}
 
 alias f='fuck'
 alias j='cd'
-source /home/rozhelluk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/rozhelluk/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

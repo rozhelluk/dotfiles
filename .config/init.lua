@@ -1,6 +1,5 @@
 local config = {
 
-
   colorscheme = "gruvbox-baby",
 
   options = {
@@ -20,14 +19,7 @@ local config = {
       tabstop = 4,
       showtabline = 0,
       laststatus = 0,
-
-      -- українська мова (ctrl-^)
-      -- keymap = "ukrainian-jcuken",
-      -- iminsert = 0,
-      -- imsearch = 0,
-      --langmap = "ФИСВУАПРШОЛДЬТЩЗЙКІЕГМЦЧНЯ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "фисвуапршолдьтщзйкіегмцчня", "abcdefghijklmnopqrstuvwxyz",
     },
-
     g = {
       mapleader = " ",
       cmp_enabled = true,
@@ -36,9 +28,6 @@ local config = {
       status_diagnostics_enabled = true,
       autoformat_enabled = false,
     },
-    -- o = {
-    --   ls = 0,
-    -- },
   },
 
   default_theme = {
@@ -55,14 +44,12 @@ local config = {
       rainbow = true,
       symbols_outline = true,
       telescope = true,
-
       ["neovim-session-manager"] = false,
       ["nvim-tree"] = false,
       dashboard = false,
       hop = false,
       lightspeed = false,
       vimwiki = false,
-      -- ["heirline.nvim"] = false,
     },
   },
 
@@ -73,9 +60,7 @@ local config = {
 
   lsp = {
     mappings = {
-      n = {
-        -- ["<leader>lf"] = false -- disable formatting keymap
-      },
+      n = {},
     },
   },
 
@@ -87,10 +72,17 @@ local config = {
     vim.keymap.set("v", "<A-r>", "<C-^>"),
 
     n = {
+
+      ["<F5>"] = false,
+      ["<F17>"] = false,
+      ["<F29>"] = false,
+      ["<F6>"] = false,
+      ["<F9>"] = false,
+      ["<F10>"] = false,
+      ["<F11>"] = false,
+      ["<F23>"] = false,
       ["<leader>tp"] = {
-        function()
-          astronvim.toggle_term_cmd "python3.11"
-        end,
+        function() astronvim.toggle_term_cmd "python3.11" end,
         desc = "ToggleTerm python",
       },
 
@@ -112,10 +104,10 @@ local config = {
       ["<leader>au"] = { "<cmd>AstroUpdate<cr>", desc = "AstroUpdate" },
       ["<leader>av"] = { "<cmd>AstroVersion<cr>", desc = "AstroVersion" },
 
-       vim.keymap.set("n","<F4>", ":w<CR>:exec '!python3 -B' shellescape(@%, 1)<CR>"),
-      -- vim.keymap.set("n","<F6>", ":w<CR>:vsplit term://python3 -B %<cr>i"),
-      -- vim.keymap.set("n","<F8>", ":w<CR>:exec '!g++ -Wall % && ./a.out' shellescape(@%, 1)<CR>"),
-      -- vim.keymap.set("n","<F9>", ":w<CR>:vsplit term://g++ -Wall % && ./a.out<cr>i"),
+      vim.keymap.set("n", "<F5>", ":w<CR>:exec '!python3.11 -B' shellescape(@%, 1)<CR>"),
+      vim.keymap.set("n", "<F4>", ":w<CR>:vsplit term://python3.11 -B %<cr>i"),
+      vim.keymap.set("n", "<F8>", ":w<CR>:exec '!g++ -Wall % && ./a.out' shellescape(@%, 1)<CR>"),
+      vim.keymap.set("n", "<F9>", ":w<CR>:vsplit term://g++ -Wall % && ./a.out<cr>i"),
 
       ["<leader>r"] = { ":LspRestart<cr>", desc = "LspRestart" }, -- change description but the same command
     },
@@ -124,20 +116,26 @@ local config = {
     },
 
     -- i = {
-    --   vim.keymap.set("i", "<F4>", "<Esc>:w<CR>:exec '!python3 -B' shellescape(@%, 1)<CR>"),
-    --   vim.keymap.set("i", "<F6>", "<Esc>:w<CR>:vsplit term://python3 -B %<cr>i"),
+    vim.keymap.set("i", "<F5>", "<Esc>:w<CR>:exec '!python3.11 -B' shellescape(@%, 1)<CR>"),
+    vim.keymap.set("i", "<F4>", "<Esc>:w<CR>:vsplit term://python3.11 -B %<cr>i"),
     -- },
   },
 
   plugins = {
-    -- heirline = function(config)
-    --   config[2] = nil
-    --   return config
-    -- end,
     init = {
       ["goolord/alpha-nvim"] = { disable = true },
       "luisiacc/gruvbox-baby",
+      "Pocco81/auto-save.nvim",
     },
+    dapui = function(config) -- parameter is the default setup config table
+      local dap = require "dap"
+      dap.listeners.after.event_initialized["dapui_config"] = nil
+      dap.listeners.before.event_terminated["dapui_config"] = nil
+      dap.listeners.before.event_exited["dapui_config"] = nil
+
+      -- modify config table if necessary to configure `nvim-dap-ui`
+      return config
+    end,
   },
 
   cmp = {
@@ -169,5 +167,39 @@ local config = {
   -- updater = {
   --   channel = "nightly",
   -- },
+  --
+  dap = {
+    adapters = {
+      python = {
+        type = "executable",
+        command = "path/to/virtualenvs/debugpy/bin/python",
+        args = { "-m", "debugpy.adapter" },
+      },
+    },
+    configurations = {
+      python = {
+        {
+          type = "python",
+          request = "launch",
+          name = "Launch file",
+          program = "${file}",
+          pythonPath = function()
+            local cwd = vim.fn.getcwd()
+            if vim.fn.executable(cwd .. "/venv/bin/python") == 1 then
+              return cwd .. "/venv/bin/python"
+            elseif vim.fn.executable(cwd .. "/.venv/bin/python") == 1 then
+              return cwd .. "/.venv/bin/python"
+            elseif vim.fn.executable(cwd .. "/env/bin/python") == 1 then
+              return cwd .. "/env/bin/python"
+            elseif vim.fn.executable(cwd .. "/.env/bin/python") == 1 then
+              return cwd .. "/.env/bin/python"
+            else
+              return "/usr/bin/python3.11"
+            end
+          end,
+        },
+      },
+    },
+  },
 }
 return config
