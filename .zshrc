@@ -88,6 +88,7 @@ alias k8000='sudo fuser -k 8000/tcp'
 alias .dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' 
 # for aur repos
 alias aur=paru
+alias p=paru
 
 # exa (ls)
 alias lS='exa' # ls

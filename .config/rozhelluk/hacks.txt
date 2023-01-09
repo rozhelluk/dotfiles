@@ -10,3 +10,7 @@ dconf reset -f /
 
 dconf dump /org/gnome/ > my_gnome_settings.backup
 dconf reset -f /org/gnome/
+
+
+_ wipefs --all /dev/sda - formating 
+dd bs=4M if=/home/user/linux.iso of=/dev/sda status=progress oflag=sync 
