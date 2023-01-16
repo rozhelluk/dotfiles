@@ -11,6 +11,8 @@ export TERM="alacritty"
 
 ZSH_THEME="my2"
 plugins=(git
+  # vi-mode
+  zsh-vi-mode
   extract
   pip
   python
