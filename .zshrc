@@ -1,5 +1,5 @@
 ZSH_DISABLE_COMPFIX=true
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 #==================================export=====================================#
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/.bin:$PATH
@@ -27,11 +27,11 @@ eval PYTHONDONTWRITEBYTECODE=1
 
 #==================================unalias====================================#
 #ls
-unalias l    #size,show type,human readable
-unalias la   #long list,show almost all,show type,human readable
-unalias ll   #long list
-unalias ls 
-unalias lsa 
+# unalias l    #size,show type,human readable
+# unalias la   #long list,show almost all,show type,human readable
+# unalias ll   #long list
+# unalias ls 
+# unalias lsa 
 # py
 # unalias py
 
@@ -39,6 +39,9 @@ unalias lsa
 bindkey -s '^o' 'xdg-open .^M'
 
 #==================================alias=====================================#
+
+alias aliases=acs
+
 alias cls="clear"
 # nvim | config
 alias vimconfig="v ~/.config/nvim/lua/user/init.lua"
@@ -52,11 +55,12 @@ alias wi='which'
 
 # open dir / files
 alias o='open'
-alias xe='xdg-open .'
+# alias xe='xdg-open .'
+alias xe='nautilus .'
 alias cdd='cd ~/Downloads/'
 
 # alacritty
-alias set="set_alacritty_opacity2" 
+alias 'set'="set_alacritty_opacity2" 
 
 # for python | wenv
 # export PATH=$PATH:/home/rozhelluk/.python3.11/bin$PATH

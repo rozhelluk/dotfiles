@@ -126,6 +126,7 @@ local config = {
       ["goolord/alpha-nvim"] = { disable = true },
       "luisiacc/gruvbox-baby",
       "Pocco81/auto-save.nvim",
+      "XkbSwitchEnabled",
     },
     dapui = function(config) -- parameter is the default setup config table
       local dap = require "dap"
