@@ -6,6 +6,9 @@ export PATH=$HOME/.bin:$PATH
 export MANPAGER='nvim +Man!'
 export EDITOR='nvim'
 export TERM="alacritty"
+export TERMINAL="alacritty"
+export TERMCMD="alacritty"
+
 # export PATH=$PATH:/usr/local/go/bin
 # export PATH=$HOME/.bin
 

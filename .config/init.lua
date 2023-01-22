@@ -127,6 +127,7 @@ local config = {
       "luisiacc/gruvbox-baby",
       "Pocco81/auto-save.nvim",
       "XkbSwitchEnabled",
+      "iamcco/markdown-preview.nvim",
     },
     dapui = function(config) -- parameter is the default setup config table
       local dap = require "dap"
