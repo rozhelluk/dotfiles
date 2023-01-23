@@ -108,6 +108,7 @@ local config = {
       vim.keymap.set("n", "<F4>", ":w<CR>:vsplit term://python3.11 -B %<cr>i"),
       vim.keymap.set("n", "<F8>", ":w<CR>:exec '!g++ -Wall % && ./a.out' shellescape(@%, 1)<CR>"),
       vim.keymap.set("n", "<F9>", ":w<CR>:vsplit term://g++ -Wall % && ./a.out<cr>i"),
+      vim.keymap.set("n", "<F6>", "vim.bo.filetype"),
 
       ["<leader>r"] = { ":LspRestart<cr>", desc = "LspRestart" }, -- change description but the same command
     },
