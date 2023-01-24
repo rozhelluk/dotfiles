@@ -100,15 +100,17 @@ alias aur=paru
 alias p=paru
 
 # exa (ls)
+
+alias l='exa -1 --icons'
+alias ll='exa -1 --icons -a'
+alias la='exa -l -a '
+alias ls='exa'
+#
 alias lS='exa' # ls
-alias l='exa -lbF --git --icons' # list, size, type, git
-alias ll='exa -lbFa --git --icons' # long list
 alias L='exa -lbGF --git --icons' # long list
 alias llm='exa -lbGF --git --sort=modified --icons' # long list, modified date sort
-alias la='exa -lbhHiUmuSa --time-style=long-iso --git --color-scale --icons' # all list
 alias lx='exa -lbhHiUmuSa@ --time-style=long-iso --git --color-scale --icons' # all + extended list
-# speciality views
-alias ls='exa -1 --icons' # one column, just names
+# # speciality views
 alias lt='exa --tree --level=2 --icons' # tree
 alias lh='exa --icons -d .*'
 alias ld='exa --icons -D'
