@@ -6,13 +6,13 @@ window:
     y: 0
   dynamic_padding: false
   decorations: Full
-  opacity: 1
+  opacity: .7
   # title: Alacritty
   # class:
   #   instance: Alacritty
   #   general: Alacritty
 colors:
-  transparent_background_colors: true
+  transparent_background_colors: false
 scrolling:
   history: 10000
 font:

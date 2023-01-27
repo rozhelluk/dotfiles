@@ -75,7 +75,7 @@ alias ae='source .env/bin/activate'
 alias de="deactivate"
 # alias .="source"
 
-alias www='/opt/firefox/firefox'
+alias www='waterfox'
 # # update for deb
 # alias update='_ apt update -y && echo " " && _ apt upgrade -y && apt list --upgradable  && echo " " && _ apt autoremove -y'
 
@@ -104,7 +104,7 @@ alias p=paru
 alias l='exa -1 --icons'
 alias ll='exa -1 --icons -a'
 alias la='exa -l -a '
-alias ls='exa'
+alias ls='exa --icons'
 #
 alias lS='exa' # ls
 alias L='exa -lbGF --git --icons' # long list
