@@ -3,6 +3,7 @@ exa - ls
 bat - cat
 snapper 
 dust - disk usage
+ffmpeg
 
 #dconf backup
 dconf dump / > dconf.backup
