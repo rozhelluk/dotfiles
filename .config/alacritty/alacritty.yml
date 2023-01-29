@@ -12,7 +12,7 @@ window:
   #   instance: Alacritty
   #   general: Alacritty
 colors:
-  transparent_background_colors: false
+  transparent_background_colors: true
 scrolling:
   history: 10000
 font:

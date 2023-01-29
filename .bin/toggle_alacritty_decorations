@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.11
+#!/usr/bin/env python3
 
 
 index = None
@@ -9,7 +9,7 @@ with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'r') as file:
             index = line
             print(data[line].strip())
 
-if float(data[index].strip().split()[1]) != 1:
+if data[index].strip().split()[1] != "Full":
     data[index] = f'  decorations: Full\n'
     with open('/home/rozhelluk/.config/alacritty/alacritty.yml', 'w') as file:
         file.writelines(data)
