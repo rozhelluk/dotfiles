@@ -1,0 +1,21 @@
+pacman -S git
+sudo pacman -S github-cli
+
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+
+# paru -S waterfox-classic-bin 
+
+paru -S ripgrep lazygit gdu tldr bat bottom tree curl exa nodejs npm tmux xclip gnome-shell-extension-pop-shell-git
+
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim
+
+cargo install alacritty
+
