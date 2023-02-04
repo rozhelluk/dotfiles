@@ -5,6 +5,7 @@ ZSH_DISABLE_COMPFIX=true
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/.bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.python3.11.1/bin:$PATH
 
 export MANPAGER='nvim +Man!'
 export EDITOR='nvim'
@@ -62,9 +63,10 @@ alias bat='/bin/bat --theme gruvbox-dark'
 alias wi='which'
 
 # open dir / files
-alias o='open'
+alias o='xdg-open'
 # alias xe='xdg-open .'
 alias xe='nautilus .'
+alias xt='ranger'
 alias cdd='cd ~/Downloads/'
 
 # alacritty
@@ -117,6 +119,22 @@ alias lx='exa -lbhHiUmuSa@ --time-style=long-iso --git --color-scale --icons' # 
 alias lt='exa --tree --level=2 --icons' # tree
 alias lh='exa --icons -d .*'
 alias ld='exa --icons -D'
+
+
+alias lr='exa -1 --icons -r'
+alias llr='exa -1 --icons -a -r'
+alias lar='exa -l -a -r '
+alias lsr='exa --icons -r'
+#
+alias lSr='exa -r' # ls
+alias Lr='exa -lbGF --git --icons -r' # long list
+alias llmr='exa -lbGF --git --sort=modified --icons -r' # long list, modified date sort
+alias lxr='exa -lbhHiUmuSa@ --time-style=long-iso --git --color-scale --icons -r' # all + extended list
+# # speciality views
+alias ltr='exa --tree --level=2 --icons -r' # tree
+alias lhr='exa --icons -r -d .*'
+alias ldr='exa --icons -D -r'
+
 
 # alias lg='lazygit'
 alias hacks='v ~/.config/hacks.txt'
