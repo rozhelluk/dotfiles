@@ -1,20 +1,6 @@
 #
 ZSH_DISABLE_COMPFIX=true
 # fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-#==================================export=====================================#
-export ZSH="$HOME/.oh-my-zsh"
-export PATH=$HOME/.bin:$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/.python3.11.1/bin:$PATH
-
-export MANPAGER='nvim +Man!'
-export EDITOR='nvim'
-export TERM="alacritty"
-export TERMINAL="alacritty"
-export TERMCMD="alacritty"
-
-# export PATH=$PATH:/usr/local/go/bin
-# export PATH=$HOME/.bin
 
 ZSH_THEME="my2"
 plugins=(git
