@@ -51,7 +51,7 @@ bindkey -s '^o' 'xdg-open .^M'
 
 alias aliases=acs
 
-alias cls="clear"
+alias cls="clear -x"
 # nvim | config
 alias vimconfig="v ~/.config/nvim/lua/user/init.lua"
 alias v='/usr/bin/nvim'
@@ -137,10 +137,13 @@ alias ldr='exa --icons -D -r'
 
 
 # alias lg='lazygit'
-alias hacks='v ~/.config/hacks.txt'
+alias hacks='v ~/.config/rozhelluk/hacks.txt'
 
 cx(){ cd "$@" && ll;}
 
 alias f='fuck'
 alias j='cd'
+
+alias c="xclip -sel clip"
+alias paste="xclip -out -sel clip"
 #source /home/rozhelluk/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
