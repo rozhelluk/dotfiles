@@ -27,6 +27,11 @@ local config = {
       diagnostics_enabled = true,
       status_diagnostics_enabled = true,
       autoformat_enabled = false,
+
+      mkdp_auto_start = 1,
+      mkdp_browser = '/opt/waterfox/waterfox',
+      mkdp_auto_close = 1,
+      mkdp_echo_preview_url = 1
     },
   },
 
@@ -129,6 +134,7 @@ local config = {
       "Pocco81/auto-save.nvim",
       "XkbSwitchEnabled",
       "iamcco/markdown-preview.nvim",
+      -- "davidgranstrom/nvim-markdown-preview"
     },
     dapui = function(config) -- parameter is the default setup config table
       local dap = require "dap"
