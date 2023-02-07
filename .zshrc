@@ -51,8 +51,8 @@ alias wi='which'
 # open dir / files
 alias o='xdg-open'
 # alias xe='xdg-open .'
-alias xe='nautilus .'
-alias xt='ranger'
+alias xe='nohup nautilus . &'
+alias xr='ranger'
 alias cdd='cd ~/Downloads/'
 
 # alacritty
