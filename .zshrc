@@ -51,7 +51,8 @@ alias wi='which'
 # open dir / files
 alias o='xdg-open'
 # alias xe='xdg-open .'
-alias xe='nohup nautilus . &'
+# 
+alias xe='nohup nautilus . > /dev/null 2>&1&'
 alias xr='ranger'
 alias cdd='cd ~/Downloads/'
 
@@ -94,7 +95,7 @@ alias p=paru
 
 alias l='exa -1 --icons'
 alias ll='exa -1 --icons -a'
-alias la='exa -l -a '
+alias la='exa -l -a --git'
 alias ls='exa --icons'
 #
 alias lS='exa' # ls
@@ -109,7 +110,7 @@ alias ld='exa --icons -D'
 
 alias lr='exa -1 --icons -r'
 alias llr='exa -1 --icons -a -r'
-alias lar='exa -l -a -r '
+alias lar='exa -l -a -r --git'
 alias lsr='exa --icons -r'
 #
 alias lSr='exa -r' # ls
