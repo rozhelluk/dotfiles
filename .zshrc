@@ -16,9 +16,9 @@ plugins=(git
   #zsh-syntax-highlighting
   #zsh-completions
 )
+
+
 source $ZSH/oh-my-zsh.sh
-#eval $(thefuck --alias)
-eval PYTHONDONTWRITEBYTECODE=1
 
 #==================================unalias====================================#
 #ls
@@ -57,7 +57,7 @@ alias xr='ranger'
 alias cdd='cd ~/Downloads/'
 
 # alacritty
-alias 'set'="set_alacritty_opacity2" 
+alias 'set'="set_alacritty_opacity.sh" 
 
 # for python | wenv
 # export PATH=$PATH:/home/rozhelluk/.python3.11/bin$PATH
@@ -124,13 +124,17 @@ alias ldr='exa --icons -D -r'
 
 
 # alias lg='lazygit'
-alias hacks='v ~/.config/rozhelluk/hacks.txt'
+alias hacks='v ~/.config/rozhelluk/hacks.md'
 
 cx(){ cd "$@" && ll;}
 
 alias f='fuck'
-alias j='cd'
+# alias j='cd'
 
 alias c="xclip -sel clip"
 alias paste="xclip -out -sel clip"
 #source /home/rozhelluk/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#eval $(thefuck --alias)
+eval "$(jump shell zsh)"
+eval PYTHONDONTWRITEBYTECODE=1

@@ -101,7 +101,7 @@ local config = {
       vim.keymap.set("n", "<leader>n", ":ASToggle<CR>"),
 
       -- vim.keymap.set("n", "<F2>", ":!toggle_alacritty_opacity"),
-      ["<F2>"] = { "<cmd>!toggle_vim_opacity<cr><cr>", desc = "toggle vim opacity" },
+      ["<F2>"] = { "<cmd>!toggle_vim_opacity.sh<cr><cr>", desc = "toggle vim opacity" },
       ["<F3>"] = { "<cmd>!set_alacritty_opacity2<cr><cr>", desc = "toggle alacritty opacity" },
 
       ["<leader>ar"] = { "<cmd>AstroReload<cr>", desc = "AstroReload" },
