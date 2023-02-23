@@ -1,7 +1,5 @@
 local config = {
-
   colorscheme = "gruvbox-baby",
-
   options = {
     opt = {
       relativenumber = true,
@@ -34,7 +32,6 @@ local config = {
       mkdp_echo_preview_url = 1
     },
   },
-
   default_theme = {
     plugins = {
       ["neo-tree"] = true,
@@ -57,18 +54,15 @@ local config = {
       vimwiki = false,
     },
   },
-
   diagnostics = {
     virtual_text = true,
     underline = true,
   },
-
   lsp = {
     mappings = {
       n = {},
     },
   },
-
   mappings = {
     vim.keymap.set("", ";", ":"),
     vim.keymap.set("n", "<A-r>", "i<C-^><esc>l"),
@@ -86,10 +80,16 @@ local config = {
       ["<F10>"] = false,
       ["<F11>"] = false,
       ["<F23>"] = false,
+
+
       ["<leader>tp"] = {
         function() astronvim.toggle_term_cmd "python3.11" end,
         desc = "ToggleTerm python",
       },
+
+      ["<M-l>"] = {
+        function() vim.diagnostic.open_float() end,
+        desc = "Hover diagnostics" },
 
       ["<leader>bb"] = { "<cmd>tabnew<cr>", desc = "New tab" },
       ["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", desc = "Pick to close" },
@@ -126,7 +126,6 @@ local config = {
     vim.keymap.set("i", "<F4>", "<Esc>:w<CR>:vsplit term://python3.11 -B %<cr>i"),
     -- },
   },
-
   plugins = {
     init = {
       ["goolord/alpha-nvim"] = { disable = true },
@@ -146,7 +145,6 @@ local config = {
       return config
     end,
   },
-
   cmp = {
     source_priority = {
       nvim_lsp = 1000,
@@ -155,7 +153,6 @@ local config = {
       path = 250,
     },
   },
-
   ["which-key"] = {
     register = {
       n = {
@@ -167,12 +164,10 @@ local config = {
       },
     },
   },
-
   polish = function()
     vim.cmd [[ autocmd BufNewFile,BufRead *.html set filetype=html ]]
     vim.cmd [[ autocmd FileType htmldjango,html,javascript,lua,yaml,yml,cpp setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab]]
   end,
-
   -- updater = {
   --   channel = "nightly",
   -- },
