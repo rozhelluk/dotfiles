@@ -1,0 +1,10 @@
+#!/home/rozhelluk/.python3.11.1/bin/python3.11
+
+import os
+
+list_of_dirs = os.popen('/usr/bin/exa -D -a').read()
+list_of_dirs = list_of_dirs.split('\n')
+for dir in list_of_dirs:
+    if dir in ('.env', 'env', '.venv', 'venv'):
+        os.system(f'. {dir}/bin/activate')
+        break
