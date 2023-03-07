@@ -6,7 +6,7 @@ window:
     y: 0
   dynamic_padding: false
   decorations: None
-  opacity: 0.7
+  opacity: 1.0
 
   # title: Alacritty
   # class:
