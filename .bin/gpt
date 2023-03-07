@@ -1,0 +1,27 @@
+#!/home/rozhelluk/.cache/pypoetry/virtualenvs/chatgpt-voice-assistant-luBpV9Ri-py3.11/bin/python
+
+import os
+import sys
+
+import openai
+
+with open(f"{os.getenv('HOME')}/.config/rozhelluk/chatgptapi") as api_key:
+    openai.api_key = api_key.read().rstrip()
+
+
+text = (
+    openai.ChatCompletion.create(
+        model='gpt-3.5-turbo',
+        messages=[
+            {
+                'role': 'user',
+                'content': ' '.join(sys.argv[1::]),
+            }
+        ],
+    )
+    .choices[0]
+    .message.content
+)
+
+
+print(text)
